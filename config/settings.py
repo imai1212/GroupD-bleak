@@ -39,11 +39,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #'hinata.apps.HinataConfig',
-    #'kikuchi.apps.KikuchiConfig',
-    #'satou.apps.SatouConfig',
-    #'ezura.apps.EzuraConfig',
-    #'kazuma.apps.KazumaConfig',
+    'hinata.apps.HinataConfig',
+    'kikuchi.apps.KikuchiConfig',
+    'satou.apps.SatouConfig',
+    'ezura.apps.EzuraConfig',
+    'kazuma.apps.KazumaConfig',
+
+    'accounts.apps.AccountsConfig',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.accounts',
+
 ]
 
 MIDDLEWARE = [
@@ -110,9 +116,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 
